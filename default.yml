@@ -1,0 +1,16 @@
+type: s
+
+shadowsocks:
+  address: 0.0.0.0:10086
+
+manager:
+  address: 0.0.0.0:10087
+  password: 'cptbtptp'
+
+#db: 'db.sqlite'
+
+db:
+  host: 'ip address'
+  user: 'ssmgr'
+  password: 'ssmgr'
+  database: 'ssmgr'

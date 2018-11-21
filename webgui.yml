@@ -1,0 +1,54 @@
+type: m
+
+manager:
+  address: 'ip address:10087'
+  password: 'cptbtptp'
+plugins:
+  flowSaver:
+    use: true
+  user:
+    use: true
+  account:
+    use: true
+  macAccount:
+    use: true
+  group:
+    use: true
+  email:
+    use: true
+    type: 'mailgun'
+    baseUrl: 'https://api.mailgun.net/v3/mg.kinboy.me'
+    apiKey: 'there is a key'
+  webgui:
+    use: true
+    host: '0.0.0.0'
+    port: '8080'
+    site: 'http://domain name'
+    # cdn: 'http://xxx.com' # 静态资源cdn地址，可省略
+    # icon: 'icon.png' # 自定义首页图标，默认路径在 ~/.ssmgr 可省略
+    # skin: 'default' # 首页皮肤，可省略
+    # googleAnalytics: 'UA-xxxxxxxx-x' # Google Analytics ID，可省略
+    gcmSenderId: '456102641793'
+    gcmAPIKey: 'AAAAGzzdqrE:XXXXXXXXXXXXXX'
+  webgui_telegram: 
+    use: false
+    token: ''
+  alipay:
+    use: false
+    appid: 2015012108272442
+    notifyUrl: 'http://yourwebsite.com/api/user/alipay/callback'
+    merchantPrivateKey: 'xxxxxxxxxxxx'
+    alipayPublicKey: 'xxxxxxxxxxx'
+    gatewayUrl: 'https://openapi.alipay.com/gateway.do'
+  paypal:
+    use: false
+    mode: 'live' # sandbox or live
+    client_id: 'At9xcGd1t5L6OrICKNnp2g9'
+    client_secret: 'EP40s6pQAZmqp_G_nrU9kKY4XaZph'
+
+#db: 'webgui.sqlite'
+db:
+  host: '106.14.215.75'
+  user: 'ssmgr'
+  password: 'ssmgr'
+  database: 'ssmgrwebgui'
